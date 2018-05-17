@@ -1,18 +1,31 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
-
+import Gallery from './Gallery';
+const IMAGES = [
+  {
+    url: "https://www.gstatic.com/webp/gallery3/1.png",
+    caption:"image 1"
+  },
+  {
+    url:"https://www.gstatic.com/webp/gallery3/2.png",
+    caption:"image 2"
+  },
+  {
+    url:"https://www.gstatic.com/webp/gallery3/3.png",
+    caption:"image 3"
+  },
+  {
+    url:"https://www.gstatic.com/webp/gallery3/5.png",
+    caption:"image 4"
+  }
+];
 class App extends Component {
+    
   render() {
+    
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <Gallery images={IMAGES}/>
       </div>
     );
   }

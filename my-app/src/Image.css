@@ -1,0 +1,15 @@
+.gallery-image {
+   width: 400px;
+   height: 400px;
+   padding-top: 20px;
+}
+
+.caption {
+   position: absolute;
+   top: 200px;
+   width: 100%;
+}
+
+.container {
+  position: relative;
+}
